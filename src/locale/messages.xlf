@@ -6,7 +6,7 @@
         <source>A simple message.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
         <note priority="1" from="description">Simple message example</note>
       </trans-unit>
@@ -14,7 +14,7 @@
         <source>Hi, <x id="INTERPOLATION" equiv-text="{{ name }}"/>! 👋</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">4,6</context>
         </context-group>
         <note priority="1" from="description">Argument message example</note>
       </trans-unit>
@@ -22,7 +22,7 @@
         <source>{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> item} other {<x id="INTERPOLATION"/> items}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">6,8</context>
         </context-group>
         <note priority="1" from="description">Plural message example</note>
       </trans-unit>
@@ -30,23 +30,23 @@
         <source>{VAR_SELECT, select, male {Mr <x id="INTERPOLATION"/>} female {Mrs <x id="INTERPOLATION"/>} other {Client <x id="INTERPOLATION"/>}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">8,10</context>
         </context-group>
         <note priority="1" from="description">Gender message example</note>
       </trans-unit>
       <trans-unit id="message.number-format" datatype="html">
-        <source>Formatted number: <x id="INTERPOLATION" equiv-text="{{ amount | number: &quot;.2&quot; }}"/></source>
+        <source>Formatted number: <x id="INTERPOLATION" equiv-text="{{ amount | number : &quot;.2&quot; }}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">10,12</context>
         </context-group>
         <note priority="1" from="description">Formatted number message example</note>
       </trans-unit>
       <trans-unit id="message.date-format" datatype="html">
-        <source>Formatted date: <x id="INTERPOLATION" equiv-text="{{ currentDate | date: &quot;fullDate&quot; }}"/></source>
+        <source>Formatted date: <x id="INTERPOLATION" equiv-text="{{ currentDate | date : &quot;fullDate&quot; }}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
         <note priority="1" from="description">Formatted date message example</note>
       </trans-unit>
@@ -54,7 +54,7 @@
         <source>Made with ❤️ by <x id="PH" equiv-text="this.company"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Component argument message example</note>
       </trans-unit>

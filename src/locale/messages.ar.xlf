@@ -7,7 +7,7 @@
         <target>رسالة بسيطة.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
         <note priority="1" from="description">Simple message example</note>
       </trans-unit>
@@ -16,16 +16,16 @@
         <target>مرحبًا <x id="INTERPOLATION" equiv-text="{{ name }}"/>! 👋</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">4,6</context>
         </context-group>
         <note priority="1" from="description">Argument message example</note>
       </trans-unit>
       <trans-unit id="message.plural" datatype="html">
         <source>{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> item} other {<x id="INTERPOLATION"/> items}}</source>
-        <target>{VAR_PLURAL, plural, zero {لا توجد عناصر} one {<x id="INTERPOLATION"/> بند} two {<x id="INTERPOLATION"/> بنود} few {<x id="INTERPOLATION"/> عناصر} many {<x id="INTERPOLATION"/> بندا} other {<x id="INTERPOLATION"/> قطعة}}</target>
+         <target>{VAR_PLURAL, plural, zero {لا توجد عناصر} one {<x id="INTERPOLATION"/> بند} two {<x id="INTERPOLATION"/> بنود} few {<x id="INTERPOLATION"/> عناصر} many {<x id="INTERPOLATION"/> بندا} other {<x id="INTERPOLATION"/> قطعة}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">6,8</context>
         </context-group>
         <note priority="1" from="description">Plural message example</note>
       </trans-unit>
@@ -34,25 +34,25 @@
         <target>{VAR_SELECT, select, male {السيد <x id="INTERPOLATION"/>} female {السيدة <x id="INTERPOLATION"/>} other {عميل <x id="INTERPOLATION"/>}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">8,10</context>
         </context-group>
         <note priority="1" from="description">Gender message example</note>
       </trans-unit>
       <trans-unit id="message.number-format" datatype="html">
-        <source>Formatted number: <x id="INTERPOLATION" equiv-text="{{ amount | number: &quot;.2&quot; }}"/></source>
+        <source>Formatted number: <x id="INTERPOLATION" equiv-text="{{ amount | number : &quot;.2&quot; }}"/></source>
         <target>عدد مهيأ: <x id="INTERPOLATION" equiv-text="{{ amount | number: &quot;.2&quot; }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">10,12</context>
         </context-group>
         <note priority="1" from="description">Formatted number message example</note>
       </trans-unit>
       <trans-unit id="message.date-format" datatype="html">
-        <source>Formatted date: <x id="INTERPOLATION" equiv-text="{{ currentDate | date: &quot;fullDate&quot; }}"/></source>
+        <source>Formatted date: <x id="INTERPOLATION" equiv-text="{{ currentDate | date : &quot;fullDate&quot; }}"/></source>
         <target>تاريخ منسق: <x id="INTERPOLATION" equiv-text="{{ currentDate | date: &quot;fullDate&quot; }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
         <note priority="1" from="description">Formatted date message example</note>
       </trans-unit>
@@ -61,7 +61,7 @@
         <target>مصنوع من ❤️ بواسطة <x id="PH" equiv-text="this.company"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Component argument message example</note>
       </trans-unit>

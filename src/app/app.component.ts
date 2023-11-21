@@ -1,4 +1,6 @@
 import { Component, Inject, LOCALE_ID } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 interface Locale {
   localeCode: string;
@@ -7,8 +9,10 @@ interface Locale {
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   constructor(@Inject(LOCALE_ID) public locale: string) {}
